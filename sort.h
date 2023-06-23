@@ -1,8 +1,12 @@
 #ifndef SORT_H
 #define SORT_H
 
-#include <stddef.h>
+#include <stdlib.h>
 #include <stdio.h>
+#include <stdbool.h>
+
+#define INCREMENT 1
+#define DECREMENT -1
 
 
 /**
