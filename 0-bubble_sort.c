@@ -4,12 +4,14 @@
   * bubble_sort - sort array of ints in ascending order
   * @array: The array of integers to sort
   * @size: The size of the array of integers
-  *
   * Return: void
   */
 void bubble_sort(int *array, size_t size)
 {
-	int i = 0, temp0 = 0, max = 0, temp = 1;
+	int i = 0,
+    temp0 = 0,
+    max = 0,
+    temp = 1;
 
 	if (!array || size < 2)
 		return;
@@ -31,3 +33,4 @@ void bubble_sort(int *array, size_t size)
 			i = -1, temp = 0, --max;
 	}
 }
+
