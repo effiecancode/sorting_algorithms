@@ -6,12 +6,10 @@
   * @size: The size of the array of integers
   * Return: void
   */
+
 void bubble_sort(int *array, size_t size)
 {
-	int i = 0,
-    temp0 = 0,
-    max = 0,
-    temp = 1;
+	int i = 0, temp = 0, max = 0, swap = 1;
 
 	if (!array || size < 2)
 		return;
@@ -22,15 +20,15 @@ void bubble_sort(int *array, size_t size)
 	{
 		if (array[i] > array[i + 1])
 		{
-			temp0 = array[i];
+			temp = array[i];
 			array[i] = array[i + 1];
-			array[i + 1] = temp0;
-			temp = 1;
+			array[i + 1] = temp;
+			swap = 1;
 			print_array(array, size);
 		}
 
-		if (temp == 1 && i == max - 1)
-			i = -1, temp = 0, --max;
+		if (swap == 1 && i == max - 1)
+			i = -1, swap = 0, --max;
 	}
 }
 
