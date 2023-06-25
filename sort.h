@@ -3,10 +3,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include <stdbool.h>
 
-#define INCREMENT 1
-#define DECREMENT -1
 
 
 /**
@@ -27,6 +24,7 @@ typedef struct listint_s
 void print_array(const int *array, size_t size);
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
+void swap(listint_t *a, listint_t *b);
 void print_list(const listint_t *list);
 
 #endif
