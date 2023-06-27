@@ -8,11 +8,12 @@
  * Return: void
  */
 
-void swap(int *a, int *b)
+void swap1(int *a, int *b, int *array, size_t size )
 {
 		int temp = *a;
 		*a = *b;
 		*b = temp;
+		print_array(array, size);
 }
 
 /**
