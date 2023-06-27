@@ -1,14 +1,16 @@
 #include "sort.h"
 
 /**
- * swap - swaps 2 integer values
+ * swap1 - swaps 2 integer values
+ * @array: the integer array to sort
+ * @size: the size of the arrat
  * @a: address of first value
  * @b: address of second value
  *
  * Return: void
  */
 
-void swap1(int *a, int *b, int *array, size_t size )
+void swap1(int *a, int *b, int *array, size_t size)
 {
 		int temp = *a;
 		*a = *b;
@@ -39,7 +41,7 @@ size_t lomuto_partition(int *array, int low, int high)
 			swap1(&array[i], &array[j], array, high + 1);
 		}
 	}
-	swap1(&array[i + 1], &array[high] , array, high + 1);
+	swap1(&array[i + 1], &array[high], array, high + 1);
 
 	return (i + 1);
 }
